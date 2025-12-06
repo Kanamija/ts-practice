@@ -3,7 +3,9 @@
 //     Editor,
 //     Guest,
 // }
-// let userRole: Role = Role.Admin;
-// userRole = Role.Guest;
-var userRole;
+var userRole = 'admin';
 userRole = 'admin';
+var possibleResults;
+possibleResults = [1, 1];
+function access(role) {
+}
