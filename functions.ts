@@ -10,3 +10,29 @@ function logAndThrow(errorMessage: string): never {
     console.log(errorMessage);
     throw new Error(errorMessage);
 }
+
+const logMsg = (msg: string) => {
+    console.log(msg);
+}
+
+function performJob(cb: (msg: string) => void) {
+    cb('Job done!');
+}
+
+performJob(log);
+
+type User = {
+    name: string;
+    age: number;
+    greet: (msg: string) => string;
+}
+
+let user: User = {
+    name: 'Max',
+    age: 39,
+    greet(msg) {
+        console.log(msg);
+        return this.name;
+    }
+}
+console.log(user);

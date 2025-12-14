@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function add(a, b) {
     return a + b;
 }
@@ -8,17 +10,17 @@ function logAndThrow(errorMessage) {
     console.log(errorMessage);
     throw new Error(errorMessage);
 }
-var logMsg = function (msg) {
+const logMsg = (msg) => {
     console.log(msg);
 };
 function performJob(cb) {
     cb('Job done!');
 }
 performJob(log);
-var user = {
+let user = {
     name: 'Max',
     age: 39,
-    greet: function (msg) {
+    greet(msg) {
         console.log(msg);
         return this.name;
     }
