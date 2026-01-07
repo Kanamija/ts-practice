@@ -1,36 +1,26 @@
-let hobbies: Array<string | number> = ['Sports', 'Cooking'];
+let hobbies = ['Sports', 'Cooking'];
 
-hobbies.push(58)
-hobbies.push('hello');
-console.log(hobbies); 
+// hobbies.push('Fencing')
 
+// let users: (string | number)[];
+let users: Array<string | number>;
 
+users = [1, 'Max', 5, 'Jack'];
 
 let user: {
     name: string;
-    age: number | string;
+    age: number | 'string';
     hobbies: string[];
     role: {
         description: string;
         id: number;
-    }
+    };
 } = {
-    name: 'Kanami',
-    age: 42,
-    hobbies: ['surfing', 'running', 'cooking'],
+    name: 'George',
+    age: 40,
+    hobbies: ['Fishing'],
     role: {
-        description: 'Mom',
-        id: 5252
+        description: 'Front Desk',
+        id: 90
     }
-}
-console.log(user);
-
-let val: {} = 'is a value';
-
-let data: Record<string, boolean | number>;
-
-data = {
-    entry1: 5,
-    entry2: false,
-    entry3: 89
 }
