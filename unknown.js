@@ -1,7 +1,7 @@
-function process(val) {
-    if (typeof val === 'object' &&
-        !!val && 'log' in val &&
-        typeof val.log === 'function') {
-        val.log();
+function calculateTax(income) {
+    if (income < 50000) {
+        return income * 1.2;
     }
+    return income * 1.3;
 }
+console.log(calculateTax(75000));
